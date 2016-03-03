@@ -1,0 +1,15 @@
+clone:
+  environment:
+  - GIT_SSL_NO_VERIFY=true
+publish:
+  docker:
+    environment:
+    - DOCKER_LAUNCH_DEBUG=true
+    storage_driver: overlay
+    username: $$DOCKER_USERNAME
+    password: $$DOCKER_PWD
+    email: lars.mogren@gmail.com
+    repo: larmog/armhf-alpine-java
+    tag:
+    - jdk-8u73
+
